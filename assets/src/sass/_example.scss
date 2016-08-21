@@ -1,0 +1,104 @@
+/**
+ * Objects
+ *
+ * Objects are invisible
+ */
+
+/*
+    // Grid Example
+    <div class="grid">
+        <div class="column half">
+            <p>Item 1</p>
+        </div>
+        <div class="column half">
+            <p>Item 2</p>
+        </div>
+    </div>
+ */
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    max-width: 1200px;
+    widht: 90%;
+}
+
+.column {
+    padding: 0 .75rem 1.5rem;
+}
+
+.whole  { width: 100%; }
+.half   { width: 50%; }
+.third  { width: 33.333%; }
+.fourth { width: 25%; }
+
+
+// Nav object
+// can be used to help create .menu, .filters, .tabs, .social, .pagination
+.nav {
+    padding: 0;
+    list-style: none;
+}
+
+.nav li {
+    float: left;
+}
+
+/**
+ * Components
+ */
+
+// the main object
+.post {}
+
+// object-child
+.post-title {}
+.post-author {}
+
+// modifier
+.post--stacked {}
+
+// object.state
+.post.is-sticky {}
+
+/**
+ * State classes
+ */
+.is-hidden { display: none; }
+.is-clickable { cursor: pointer; }
+.is-active {} // not all state classes will have style, just for js
+
+/**
+ * Behaviour classes
+ */
+// NEVER STYLED, just for JS behaviour injection
+.js-click {}
+// or: <a class="popup" data-popup="#target">
+
+/**
+ * Utitlity Classes
+ */
+.u-left   { text-align: left; }
+.u-center { text-align: center; }
+.u-right  { text-align: right; }
+
+
+/**
+ * Repsonsive utilities
+ */
+
+// 1200
+.xxl-something {}
+// 960
+.xl-something {}
+// 800
+.l-something {}
+// 600
+.m-something {}
+// 480
+.s-something {}
+// 320
+.xs-something {}
+// 220?
+.xxs-something {}

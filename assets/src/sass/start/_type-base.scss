@@ -1,0 +1,260 @@
+/**
+ * Type base
+ * All base font styles
+ */
+
+/**
+ * Base font style
+ */
+html,
+body {
+  font-family: $family;
+  font-size: $base;
+  line-height: rhythm(2);
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+}
+
+/**
+ * Vertical Rhythm
+ */
+.content {
+  p,
+  ol,
+  ul,
+  dl,
+  figure,
+  address,
+  table,
+  pre code,
+  pre,
+  img {
+    margin-bottom: rhythm(2);
+  }
+}
+
+p {
+    margin-bottom: rhythm(2);
+}
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: rhythm(1);
+  line-height: rhythm(3);
+}
+
+h1,
+.alpha { @include scale(4);line-height: rhythm(4);  }
+
+h2,
+.beta { @include scale(3);line-height: rhythm(3); }
+
+h3,
+.gamma { @include scale(2);line-height: rhythm(2.5); }
+
+h4,
+.delta {
+  @include scale(1);
+  line-height: rhythm(2.25);
+
+}
+
+h5,
+.epsilon {
+  @include scale(0);
+  line-height: rhythm(1.5);
+}
+
+h6,
+.zeta {
+  @include scale(-1);
+  line-height: rhythm(1.5);
+}
+
+.subheading {
+  margin-top: rhythm(-3);
+}
+
+.standfirst {
+  @include scale(1);
+}
+
+
+
+/**
+ * Lists
+ */
+.content {
+
+  ol,
+  ul{
+    padding-left: rhythm(1);
+  }
+}
+
+// Ordered
+.content ol {
+  list-style-type: decimal;
+}
+
+// Unordered
+.content ul {
+  list-style-type: disc;
+}
+
+// Definition list
+.content dl {}
+
+.content dt { @extend .bold; }
+
+.content dd { @extend .italic; }
+
+/**
+ * Images
+ */
+.content img {
+  display: block;
+  max-width: 100%;
+}
+
+/**
+ * Blockquote
+ */
+.content blockquote {
+  display: block;
+  padding-left: rhythm(2);
+  @include scale(2);
+  line-height: rhythm(2.5);
+}
+
+
+/**
+ * Figure
+ */
+.content figure {
+  display: block;
+}
+
+.content figcaption {
+  font-style: italic;
+}
+
+/**
+ * Address
+ */
+.content address {}
+
+
+/**
+ * Links
+ */
+.content a {
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/**
+ * Bold
+ */
+
+.content {
+
+  strong,
+  b {
+    @extend .bold;
+  }
+}
+
+/**
+ * Italic
+ */
+.content {
+
+  var,
+  cite,
+  em,
+  i {
+    @extend .italic;
+  }
+}
+
+/**
+ * Strike
+ */
+.content {
+
+  s,
+  del {
+    text-decoration: strike-through;
+  }
+}
+
+/**
+ * Underline
+ */
+.content {
+
+  ins,
+  u {
+    text-decoration: underline;
+  }
+}
+
+/**
+ * Mark
+ */
+.content mark {
+  background-color: yellow;
+}
+
+/**
+ * Code
+ */
+.content {
+
+  code,
+  samp,
+  kbd {
+    display: inline-block;
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 0;
+    font-size: .875rem;
+    line-height: rhythm(1);
+  }
+}
+
+.content pre code {
+  display: block;
+  padding: rhythm(1);
+  line-height: rhythm(1);
+}
+
+/**
+ * Quotes
+ */
+.content q {}
+
+/**
+ * Tables
+ */
+.content table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+}
+
+.content thead {
+  @extend .bold;
+}
+
+.content td {
+  padding: rhythm(1/2);
+  outline: 1px solid #f5f5f5;
+}
