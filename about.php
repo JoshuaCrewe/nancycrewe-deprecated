@@ -6,16 +6,17 @@
 
             <div class="content">
                 
-                <p>
+                <span class="standfirst">
                     After studying Fine Art at Falmouth University, Nancy has
-                    continued to live and work in Falmouth, Cornwall. Her
-                    preoccupation with place and the landscape is the main
-                    influence for her work, attempting to capture part of the Genis
-                    Loci of a place. Looking at the relationship between painter
-                    and place, Nancy aims to transpose this connection on to
-                    canvas.
-                </p>
-
+                    continued to live and work in Falmouth, Cornwall.
+                </span>
+                <p>
+                    Her preoccupation with place and the landscape is the
+                    main influence for her work, attempting to capture part
+                    of the Genis Loci of a place. Looking at the relationship
+                    between painter and place, Nancy aims to transpose this
+                    connection on to canvas.  
+                </p> 
                 <p>
                     Working mainly from films she has collected from car windows,
                     train journeys and walks, Nancy is able to continue to
