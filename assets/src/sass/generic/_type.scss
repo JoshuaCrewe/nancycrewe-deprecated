@@ -1,0 +1,224 @@
+.image-test {
+    max-height: rhythm(63);
+}
+
+h1,
+.alpha {
+    @include scale(6);
+    line-height: rhythm(9);
+}
+
+h1 {
+    margin-bottom: rhythm(6);
+}
+
+h2,
+.beta {
+    @include scale(5);
+    line-height: rhythm(6);
+}
+
+h3,
+.gamma {
+    @include scale(4);
+    line-height: rhythm(7);
+}
+
+h4,
+.delta {
+    @include scale(3);
+    line-height: rhythm(6);
+}
+
+h5,
+.epsilon {
+    @include scale(2);
+    line-height: rhythm(5);
+}
+
+h6,
+.zeta,
+.zeta a {
+    @include scale(1);
+    line-height: rhythm(6);
+}
+
+.micro,
+.micro a {
+    font-size: .825rem;
+    line-height: 1rem;
+}
+
+.bold {
+    font-family: $bold;
+}
+
+p {
+    @include scale(1);
+    margin-bottom: rhythm(4);
+}
+
+.link {
+    color: inherit;
+}
+
+.content {
+    width: 70%;
+    margin: 0 auto;
+
+    @media(max-width: 1280px) {
+        width: 65%;
+    }
+
+    @media (max-width: 800px) {
+        width: 95%;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.content ul,
+.content ol {
+    margin-bottom: $type-leading * 1rem;
+}
+
+.content .standfirst {
+    margin-bottom: rhythm(4);
+    display: block;
+}
+
+.content p {
+    font-family: $body;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+// Responsive type
+
+
+/* xl */
+@media(max-width: 960px) {
+
+}
+
+/* l */
+@media(max-width: 800px) {
+
+    .l-alpha {
+        @include scale(6);
+        line-height: rhythm(9);
+    }
+
+    .l-beta {
+        @include scale(5);
+        // line-height: rhythm(6);
+    }
+
+    .l-gamma {
+        @include scale(4);
+        line-height: rhythm(7);
+        margin-bottom: rhythm(2);
+
+    }
+
+    .l-delta {
+        @include scale(3);
+        line-height: rhythm(6);
+
+    }
+
+    .l-epsilon {
+        @include scale(2);
+        line-height: rhythm(5);
+    }
+
+    .l-zeta {
+        @include scale(1);
+        // line-height: rhythm(6);
+    }
+
+    .l-center {
+        text-align: center;
+    }
+}
+
+/* m */
+@media(max-width: 600px) {
+
+    .m-alpha {
+        @include scale(6);
+        line-height: rhythm(9);
+    }
+
+    .m-beta {
+        @include scale(5);
+        // line-height: rhythm(6);
+    }
+
+    .m-gamma {
+        @include scale(4);
+        line-height: rhythm(7);
+
+    }
+
+    .m-delta {
+        @include scale(3);
+        line-height: rhythm(6);
+
+    }
+
+    .m-epsilon {
+        @include scale(2);
+        line-height: rhythm(5);
+    }
+
+    .m-zeta {
+        @include scale(1);
+        // line-height: rhythm(6);
+    }
+}
+
+/* s */
+@media(max-width: 480px) {
+    .s-alpha {
+        @include scale(6);
+        line-height: rhythm(9);
+    }
+
+    .s-beta {
+        @include scale(5);
+        // line-height: rhythm(6);
+    }
+
+    .s-gamma {
+        @include scale(4);
+        line-height: rhythm(7);
+
+    }
+
+    .s-delta {
+        @include scale(3);
+        line-height: rhythm(6);
+
+    }
+
+    .s-epsilon {
+        @include scale(2);
+        line-height: rhythm(5);
+    }
+
+    .s-zeta {
+        @include scale(1);
+        // line-height: rhythm(6);
+    }
+}
+
+/* xs */
+@media(max-width: 320px) {}
+

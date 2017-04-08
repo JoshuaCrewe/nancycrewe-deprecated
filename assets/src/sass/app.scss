@@ -1,13 +1,15 @@
 @charset 'UTF-8';
 
 // BASE
-@import 'start/all';
 @import 'config';
+@import 'start/all';
 
 // Generic
 @import 'generic/fonts';
 @import 'generic/icons';
 @import 'generic/base';
+@import 'generic/type';
+@import 'generic/skins';
 
 // Objects
 
