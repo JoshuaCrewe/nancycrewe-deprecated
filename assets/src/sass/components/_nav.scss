@@ -1,10 +1,12 @@
-.nav { }
+.nav {
+    float: right;
+}
 
-.nav li {
+.nav--main li {
     display: inline-block;
 }
 
-.nav li a {
+.nav--main li a {
     @extend .black;
     transition: $transition;
     display: inline-block;
@@ -15,3 +17,22 @@
         transition: $transition;
     }
 }
+
+.hamburger {
+    display: none;
+    float: right;
+    margin-top: rhythm(2);
+}
+
+@media (max-width: 750px) {
+    .nav {
+        float: left;
+        display: block;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+

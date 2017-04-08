@@ -27,15 +27,22 @@
                     <div class="column one-whole">
 
                         <div class="float-left">
-                            <h1 class="logo gamma">Nancy Crewe</h1>
+                            <a href="/nancycrewe">
+                                <h1 class="logo gamma">Nancy Crewe</h1>
+                            </a>
                         </div>
 
-                        <nav class="float-right">
-                            <ul class="nav">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="about">About</a></li>
-                                <li><a href="paintings.php">Paintings</a></li>
-                                <li><a href="prints">Prints</a></li>
+                        <div class="hamburger">
+                            Menu
+                            
+                        </div>
+
+                        <nav class="nav">
+                            <ul class="nav--main">
+                                <li><a href="/nancycrewe">Home</a></li>
+                                <li><a href="/nancycrewe/about.php">About</a></li>
+                                <li><a href="/nancycrewe/paintings.php">Paintings</a></li>
+                                <li><a href="#3">Prints</a></li>
                                 <li><a href="#3">Contact</a></li>
                             </ul>
 
