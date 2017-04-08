@@ -1,0 +1,40 @@
+.gallery {
+    width: 100%;
+    padding: .5vw;
+}
+
+.gallery-item {
+    width: 20%;
+    float: left;
+    padding: .5rem;
+    transition: $transition;
+
+    &:hover {
+        opacity: .6;
+    }
+
+    @media (max-width: 800px) {
+        width: 33.333%;
+    }
+
+    @media (max-width: 600px) {
+        width: 50%;
+    }
+
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+}
+
+.gallery-item .gallery-image {
+    width: 100%;
+    padding-bottom: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery-image-meta {
+    padding: .5rem;
+}

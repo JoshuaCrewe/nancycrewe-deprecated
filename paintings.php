@@ -1,16 +1,17 @@
 <?php include 'header.php'; ?>
 
-  <section>
-    <div class="row tc">
+<section>
+    <div class="row">
 
-      <?php for ($i = 0; $i < 30; $i++) : ?>
-      <div class="w4 dib">
-        <div class="cover h4 w-100 js-image" style="background-image: url('http://placehold.it/300x300');"></div>
-      </div>
-      <?php endfor; ?>
-
+        <div class="gallery cf">
+            <?php for ($i = 0; $i < 11; $i++) : ?>
+            <a href="#3" class="gallery-item">
+                <div class="gallery-image" style="background-image: url('//unsplash.it/300/300')"> </div>
+            </a>
+            <?php endfor; ?>
+        </div>
     </div>
-  
-  </section>
+
+</section>
 
 <?php include 'footer.php'; ?>
