@@ -54,20 +54,23 @@ h6,
 }
 
 p {
-    @include scale(1);
+    font-size: 1.1rem;
+    line-height: rhythm(4);
     margin-bottom: rhythm(4);
 }
 
 .link {
-    color: inherit;
+    @extend .olive;
+    @extend .border--olive;
+    border-bottom: 1px solid;
 }
 
 .content {
-    width: 70%;
+    width: 95%;
     margin: 0 auto;
 
     @media(max-width: 1280px) {
-        width: 65%;
+        width: 85%;
     }
 
     @media (max-width: 800px) {

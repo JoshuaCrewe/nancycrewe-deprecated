@@ -28,7 +28,7 @@
                 </p>
 
                 <p>
-                    Nancy is represented by Beside The Wave Gallery.
+                    Nancy is represented by <a href="//beside-the-wave.co.uk" class="link">Beside The Wave Gallery</a>.
                 </p>
 
             </div>
