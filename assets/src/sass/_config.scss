@@ -3,9 +3,45 @@
 $black: #000;
 $white: #fff;
 
+$grey : #808080;
+
+$bg: $white;
+
 // Font declarations
 
 $body: 'comic sans';
 $title: 'Roboto';
 
 $transition: all .3s ease-out;
+
+// Layering
+
+$z-under: -1;
+$z-bottom: 1;
+$z-mid: 99;
+$z-top: 9999;
+
+
+// Type setting
+// set the body font
+$type-body-font: 'Helvetica Neue', 'Ariel', sans-serif;
+$type-title-font: 'Helvetica Neue', 'Ariel', sans-serif;
+
+$body: $type-body-font;
+$title: $type-title-font;
+$bold: $title;
+
+// set the base body size
+$type-body-size: 16px;
+
+// rhythm
+// set the line-height
+$type-leading: 1.5;
+
+// set an increment for more control adjusting line-heights, paddings and margins
+// used by rhythm(4) function
+$type-rhythm: $type-leading / 4;
+
+// set the type scale for working with headings etc
+// used with @include scale(1);
+$type-scale: 1.25;

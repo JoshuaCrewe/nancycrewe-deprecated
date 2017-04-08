@@ -1,0 +1,9 @@
+.header {
+    padding: rhythm(2) 0;
+}
+
+.logo {
+    @extend .olive;
+    font-weight: bold;
+    margin-bottom: 0;
+}

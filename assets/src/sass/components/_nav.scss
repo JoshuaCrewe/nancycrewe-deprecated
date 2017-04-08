@@ -1,0 +1,17 @@
+.nav { }
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li a {
+    @extend .black;
+    transition: $transition;
+    display: inline-block;
+    padding: rhythm(2) rhythm(2);
+
+    &:hover {
+        color: $grey;
+        transition: $transition;
+    }
+}
