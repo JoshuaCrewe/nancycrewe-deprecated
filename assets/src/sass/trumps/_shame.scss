@@ -1,1 +1,8 @@
 // This is the shame file. If you put anything in here it needs some documentation with it.
+.sold {
+    transform: scale(.5);
+}
+
+.sold.hidden {
+    color: transparent;
+}

@@ -1,23 +1,26 @@
-$(document).ready(function() {
+var pswpElement = document.querySelectorAll('.pswp')[0];
 
-  $('.js-image').on('click', function() {
-    console.log("clicked");
+// build items array
+var items = [
+    {
+        src: '//unsplash.it/600x400',
+        w: 600,
+        h: 400
+    },
+    {
+        src: '//unsplash.it/1200x900',
+        w: 1200,
+        h: 900
+    }
+];
 
-    var $this = $(this);
-    var bg = $this.css('background-image');
-    var image = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
-    console.log(image);
+// define options (if needed)
+var options = {
+    // optionName: 'option value'
+    // for example:
+    index: 0 // start at first slide
+};
 
-    $('body').prepend('<button class="js-close js-destroy"> CLOSE </button> <img class="fixed js-destroy" src="'+ image +'">');
-    $('.container').hide();
-
-  });
-
-  $(document).on('click','.js-close', function(e) {
-
-    e.preventDefault();
-    $('.js-destroy').remove();
-    $('.container').show();
-  });
-
-});
+// Initializes and opens PhotoSwipe
+var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+// gallery.init();
