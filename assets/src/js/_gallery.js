@@ -1,26 +1,7 @@
-var pswpElement = document.querySelectorAll('.pswp')[0];
+// TODO : Simplify the process dramatically.
+// 1. Bind click event to links/thumbnails.
+// 2. After user clicked on on thumbnail, find its index.
+// 3. Create an array of slide objects from DOM elements – loop through all
+//    links and retrieve href attribute (large image url), data-size attribute
+//    (its size), src of thumbnail, and contents of caption.
 
-// build items array
-var items = [
-    {
-        src: '//unsplash.it/600x400',
-        w: 600,
-        h: 400
-    },
-    {
-        src: '//unsplash.it/1200x900',
-        w: 1200,
-        h: 900
-    }
-];
-
-// define options (if needed)
-var options = {
-    // optionName: 'option value'
-    // for example:
-    index: 0 // start at first slide
-};
-
-// Initializes and opens PhotoSwipe
-var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-// gallery.init();
