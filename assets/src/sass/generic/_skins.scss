@@ -2,6 +2,16 @@
     color: $grey;
 }
 
+.hr {
+    color: transparent;
+    border-bottom: 1px solid;
+    margin-bottom: rhythm(4);
+}
+
+.hr--grey {
+    border-color: transparentize($grey, 0.9);
+}
+
 /*
 
   COLORS

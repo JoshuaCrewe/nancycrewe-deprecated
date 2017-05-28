@@ -1,0 +1,31 @@
+.overlay {
+    opacity: 0;
+    z-index: $z-under;
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: $transition;
+}
+
+.overlay.is-active {
+    opacity: 1;
+    z-index: $z-top;
+    transition: $transition;
+}
+
+.overlay-close {
+    position: absolute ;
+    right: rhythm(2);
+    top: ryhthm(2);
+    height: rhythm(4);
+    width: rhythm(4);
+    color: $black;
+    font-size: 1.5rem;
+}
+
+.overlay-content {
+    padding: rhythm(8);
+}
