@@ -11,7 +11,7 @@
                 $menu.removeClass('is-active'); 
             } else {
                 $this.addClass('is-active');
-;               $menu.addClass('is-active');
+                $menu.addClass('is-active');
             }
 
         });
