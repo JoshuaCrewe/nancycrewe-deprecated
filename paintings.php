@@ -1,23 +1,35 @@
 <?php include 'header.php'; ?>
 
-<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+<div class="row">
+    <div class="column one-whole">
+        
+        <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-    <?php for ($i = 0; $i < 11; $i++) : ?>
-        <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="//unsplash.it/600x400" itemprop="contentUrl" data-size="600x400">
-                <img src="//unsplash.it/300x300" class="gallery-image" itemprop="thumbnail" alt="Image description" />
-            </a>
-            <figcaption itemprop="caption description" class="hide">Image caption <?php echo $i ?></figcaption>
-                <?php if ($i % 3 == 0) : ?>
-                    <i class="fa fa-circle red sold"></i>
-                <?php else : ?>
+            <?php for ($i = 0; $i < 11; $i++) : ?>
+                <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 
-                    <i class="fa fa-circle red sold hidden"></i>
 
-                <?php endif; ?>
-        </figure>
-    <?php endfor; ?>
+                    <!-- The href is the full sized image there needs to be a data-size  -->
+                    <a href="//unsplash.it/600x400" itemprop="contentUrl" data-size="600x400">
 
+                        <!-- The image src is the thumbnail -->
+                        <img src="//unsplash.it/300x300" class="gallery-image" itemprop="thumbnail" alt="Image description" />
+                    </a>
+
+                    <figcaption itemprop="caption description" class="hide">Image caption <?php echo $i ?></figcaption>
+
+                    <?php if ($i % 3 == 0) : ?>
+                        <i class="fa fa-circle red sold"></i>
+                    <?php else : ?>
+                        <i class="fa fa-circle red sold hidden"></i>
+                    <?php endif; ?>
+
+                </figure>
+            <?php endfor; ?>
+
+        </div>
+
+    </div>
 </div>
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
