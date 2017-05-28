@@ -8,6 +8,8 @@
     float: left;
     padding: .5rem;
     transition: $transition;
+    margin-bottom: 0;
+    text-align: center;
 
     &:hover {
         opacity: .6;
@@ -27,12 +29,9 @@
 }
 
 .gallery-item .gallery-image {
+    margin-bottom: 0;
     width: 100%;
-    padding-bottom: 100%;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 100%;
 }
 
 .gallery-image-meta {

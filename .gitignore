@@ -2,8 +2,10 @@
 
 node_modules
 
-assets/css
-assets/js
+assets/css/*
+assets/js/*
+
+yarn.lock
 
 **.vim
 
