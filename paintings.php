@@ -1,5 +1,19 @@
 <?php include 'header.php'; ?>
 
+<!-- 
+    There are some objectives to aim for with this template.
+
+    - Each image will be its own post. There will be two images attached. The
+    full sized image and the thumbnail. These will be generated
+    automatically preferably.
+
+    - Each post will have a term from the type taxonomy. The two terms so
+    far are 'Print' and 'Painting'. We could have one for Sketching.
+
+    - These terms will be used to act as filters for the content. Using
+    something like mixitup (https://www.kunkalabs.com/mixitup/) to do
+    the actual filtering.
+-->
 <div class="row">
     <div class="column one-whole">
         
