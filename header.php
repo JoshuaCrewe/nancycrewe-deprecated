@@ -32,17 +32,17 @@
                             </a>
                         </div>
 
-                        <div class="hamburger">
-                            Menu
-                            
-                        </div>
+                        <a href="#" class="hamburger js-subnav-trigger" data-subnav="mobile-menu">
+                            <span class="bars">Menu</span>
+                        </a>
 
                         <nav class="nav">
+
                             <ul class="nav--main">
-                                <li><a href="/nancycrewe">Home</a></li>
+                                <!-- <li><a href="/nancycrewe">Home</a></li> -->
                                 <li><a href="/nancycrewe/about.php">About</a></li>
-                                <li><a href="/nancycrewe/paintings.php">Paintings</a></li>
-                                <li><a href="#3">Prints</a></li>
+                                <li><a href="/nancycrewe/paintings.php">Artwork</a></li>
+                                <!-- <li><a href="#3">Prints</a></li> -->
                                 <li><a href="#3">Contact</a></li>
                             </ul>
 
