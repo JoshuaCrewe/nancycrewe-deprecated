@@ -13,5 +13,5 @@
 
     </body>
 
-    <script type="text/javascript" src="assets/js/app.min.js"></script>
+    <script type="text/javascript" src="assets/dist/js/app.min.js"></script>
 </html>
