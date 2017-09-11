@@ -1,0 +1,37 @@
+{
+    "gulp": {
+        "server": {
+            "root": "public",
+            "port": "8000",
+            "files": "public/assets/dist/css/**.css"
+        },
+        "styles": [{
+            "name": "app",
+            "src": "public/assets/src/sass/app.scss",
+            "dest": "public/assets/dist/css"
+        }],
+        "scripts": [{
+            "name": "app",
+            "src": "public/assets/src/js/app.js",
+            "dest": "public/assets/dist/js"
+        }],
+        "images": {
+            "src": "public/assets/src/img/**/*",
+            "dest": "public/assets/dist/img"
+        },
+        "svg": {
+            "src": "public/assets/src/svg/**/*.svg",
+            "dest": "public/assets/dist/svg"
+        },
+        "tests": {
+            "jsFiles": "public/assets/src/js/**/*.js",
+            "scssFiles": "public/assets/src/sass/**/*.scss"
+        },
+        "watch": {
+            "public/assets/src/sass/**/*.scss" : ["styles"],
+            "public/assets/src/js/**/*.js": ["scripts"],
+            "public/assets/src/svg/**/*.svg": ["svg"],
+            "public/assets/src/img/**/*.jpg": ["images"]
+        }
+    }
+}

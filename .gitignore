@@ -2,8 +2,8 @@
 
 node_modules
 
-assets/css/*
-assets/js/*
+public/assets/dist/css*
+public/assets/dist/js/*
 
 yarn.lock
 
