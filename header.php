@@ -27,7 +27,7 @@
                     <div class="column one-whole">
 
                         <div class="float-left">
-                            <a href="/nancycrewe">
+                            <a href="/">
                                 <h1 class="logo gamma">Nancy Crewe</h1>
                             </a>
                         </div>
@@ -40,10 +40,10 @@
 
                             <ul class="nav--main">
                                 <!-- <li><a href="/nancycrewe">Home</a></li> -->
-                                <li><a href="/nancycrewe/about.php">About</a></li>
-                                <li><a href="/nancycrewe/paintings.php">Artwork</a></li>
+                                <li><a href="/about.php">About</a></li>
+                                <li><a href="/paintings.php">Artwork</a></li>
                                 <!-- <li><a href="#3">Prints</a></li> -->
-                                <li><a href="#3">Contact</a></li>
+                                <li><a class="js-overlay-trigger" href="#3">Contact</a></li>
                             </ul>
 
                         </nav>
